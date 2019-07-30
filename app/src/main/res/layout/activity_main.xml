@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:layout_above="@+id/main_button_layout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/main_button_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/main_imageView"
+            android:contentDescription="@string/main_image_description"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/main_button_layout">
+
+        <Button
+            android:id="@+id/pic_button"
+            android:text="@string/pic_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/start_lock_button"
+            android:text="@string/lock_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="true"/>
+        <Button
+            android:id="@+id/enable_admin"
+            android:text="@string/enable_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
